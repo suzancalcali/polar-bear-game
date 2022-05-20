@@ -1,0 +1,48 @@
+#score {
+    text-align: center;
+    color: #0D2B30;
+}
+
+#game {
+    width: 1200px;
+    height: 600px;
+    border: 2px solid grey;
+    margin: auto;
+    background-image: url(images/img-landscape\ 1.png);
+    background-size: cover;
+}
+
+#polar {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 402px;
+    background-image: url(images/img-polar.png);
+    background-size: cover;
+}
+
+#oil {
+    width: 75px;
+    height: 85px;
+    position: relative;
+    top: 315px;
+    background-image: url(images/img-oil.png);
+    background-size: cover;
+    animation: oil 1.85s infinite;
+}
+
+@keyframes oil {
+    0%{left: 1125px;}
+    100%{left: -75px;}
+}
+
+.jump-animation {
+    animation: jump 0.75s;
+}
+
+@keyframes jump {
+    0%{top: 402px;}
+    50%{top: 200px;}
+    75%{top: 200px;}
+    100%{top: 402px;}
+}
